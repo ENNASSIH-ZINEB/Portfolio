@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ENNASSIH ZINEB</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="logo_zineb.png" alt="ENNASSIH ZINEB">
+        <img class="logo" src="logoZinebBleu.png" alt="ENNASSIH ZINEB">
         <nav>
             <ul class="navigation">
                 <li><a href="#aPropos">A PROPOS</li></a>
@@ -21,7 +24,7 @@
     </header>
     <main>
         <section class="sect1">
-            <img id="image" src="sens_au_travail.webp" alt="sens du travail">
+            <img id="image" src="ZINEB ENNASSIH.jpg" alt="sens du travail">
             <div class="div1">
                 <h2 id="aPropos">A propos</h2>
                 <p> 34 ans J’ai choisi d’axer ma reconversion professionnelle autour de ma créativité et de mon
@@ -33,20 +36,28 @@
         </section>
         <section class="sect2">
             <h2>Compétences</h2>
-            <div class="card">
-                <h3> Hardskills</h3>
-                <figure class="card">
-                    <img src="./assets/planet.svg" alt="icône planet" />
-                    <figcaption>Ecoresponsable</figcaption>
-                  </figure>
-                <section class="card">
-                    <ul class="ligne" >
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bureautique</li>
-                    </ul>
-                </section>
-                <section class="card">
+            <section class="sectioncard">
+                <div class="card">
+                    <h3> Hardskills</h3>
+                    <div class="div3">
+                        <figure class="fig">
+                            <i class="fa-brands fa-html5"></i>
+                            <figcaption>
+                                <h4>Html</h4>
+                                <p>Intermédiaire</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="fig">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <figcaption>
+                                <h4>Css</h4>
+                            </figcaption>
+                            <p>Intermédiaire</p>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="card">
                     <h3>Softskills</h3>
                     <ul class="ligne">
                         <li>Curieuse</li>
@@ -54,13 +65,13 @@
                         <li>Capassité d'adaptation</li>
                     </ul>
 
-                </section>
-            </div>
+                </div>
+            </section>
 
         </section>
         <section class="sect3">
             <h2>Formations</h2>
-            <ul>
+            <ul class="card">
                 <li>Aprenante au programme la toile Emlyon Bussiness School</li>
                 <li>Licence fondamentale en economie et gestion</li>
             </ul>
@@ -68,13 +79,42 @@
         </section>
         <section class="sect4">
             <h2 id="Projets"> Projets</h2>
+            <div class="Projets">
+                <div class="card">
+                    <a href="">
+                        <img class="image" src="bougie.jpg" alt="bougie">
+                        <h4></h4>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img class="image" src="bijoux.jpg" alt="bijoux">
+                        <h4>Fiche produit</h4>
+                    </a>
+                </div>
+
+            </div>
+
 
 
         </section>
         <section>
-            <h2 id="Contact"></h2>
+            <h2 id="Contact">Me contacter </h2>
 
-            <form action=""></form>
+            <section class="sect5">
+                <div>
+                    <form action="">
+                        <label for="Nom">Nom</label>
+                        <input type="text" name="Nom" id="">
+                        <label for="Mail">Mail</label>
+                        <input type="text" name="Nom" id="">
+                    </form>
+                </div>
+                <label for="Message">Message</label>
+                <textarea name="Message" id=""></textarea>
+                <button>envoyer</button>
+            </section>
+
         </section>
 
 

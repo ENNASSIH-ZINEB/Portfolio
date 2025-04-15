@@ -1,43 +1,50 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #F2F2F2
 }
-.logo{
-    width: 100px;
+body{
+    background-color: #F2F2F2;
+    color: black;
+}
+h2 {
+    font-family: serif;
+    font-size: 25px;
+    text-align: center;
+    color: #213c5f;
+}
+p {
+    font-family: sans-serif;
+    font-size: 16;
+}
+.logo {
+    width: 5%;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
-
 nav {
     display: flex;
     justify-content: flex-end;
 }
-
 .navigation {
     display: flex;
     list-style-type: none;
     gap: 20px;
 }
-
 #image {
-    width: 40%;
-    ;
+    width: 30%;
 }
-
 .sect1 {
     display: flex;
     text-align: center;
-    margin-left: 15%;
+    margin-left: 13%;
+    padding: 50px;
 }
-
 .div1 {
     display: flex;
     width: AUTO;
@@ -47,20 +54,78 @@ nav {
     WIDTH: 463PX;
     MARGIN: 56PX;
 }
-
+.sectioncard{
+    display: flex;
+    margin: 34px;
+    justify-content: center;
+}
 .card {
     display: flex;
     border: 1px solid #46352A;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 8px;
     padding: 5px;
+    GAP: 30PX;
+    MARGIN: 30px;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    background-color: #213c5f;
+    color: #F2F2F2;
 }
-
+.fig {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #A68477;
+    padding: 10px;
+    align-items: center;
+}
+figcaption{
+    
+}
+.div3{ display: flex ;
+        flex-direction: column;
+        gap: 14px;
+}
+i{
+font-size: 50px;
+color: #73564C;
+}
 .div2 {
     display: flex;
     justify-content: center;
     gap: 237px;
     padding: 24px;
 }
-.ligne{
+.ligne {
     line-height: 3;
+}
+.Projets{
+    display: flex;
+    justify-content: center;
+}
+.image{
+width: 200px;
+}
+.sect3{
+    margin: 34px;
+}
+.sect4{
+    margin: 34px;
+}
+.sect5 {
+    width: fit-content;
+    margin: auto;
+    padding: 32px;
+    box-shadow: 0 4px 15px #00000026;
+    border-radius: 18px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.Projets .card{
+    
+}
+form{
+
 }
