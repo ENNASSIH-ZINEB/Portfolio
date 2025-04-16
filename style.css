@@ -31,7 +31,7 @@ nav {
     position: fixed;
     width: 100%;
     a:hover {
-      color: #213c5f; /* Couleur au survol */
+      color: #b0cef6; /* Couleur au survol */
     }
     background-color: #26446c ;
     ul {
@@ -110,7 +110,7 @@ nav {
 
 i {
     font-size: 50px;
-    color: #73564C;
+    color: #b0cef6;
 }
 
 .div2 {
@@ -130,16 +130,16 @@ i {
 }
 
 .image {
-    width: 176px;
+    width: 203px;
     height: 176px;
     border-radius: 1rem;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .sect3 {
     margin: 34px;
-}
 
+}
 .sect4 {
     margin: 34px;
 
