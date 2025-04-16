@@ -1,74 +1,110 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
     background-color: #F2F2F2;
 }
-
+h1{
+    font-family: "Playfair Display", serif;
+    font-size: 90px;
+    text-align: center;
+    color: #213c5f;
+    padding: 20%;
+    padding-top: 10%;
+    font-weight: 200;
+}
 h2 {
-    font-family: serif;
+    font-family: "Playfair Display", serif;
     font-size: 25px;
     text-align: center;
     color: #213c5f;
+    margin: 30px;
+}
+h5{
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
 }
 
 p {
     font-family: sans-serif;
     font-size: 16;
+    font-weight: 100;
+    color: #213c5f
+}
+
+b{
+color:#213c5f;
+font-weight: bold;
+}
+
+/* -----------header---------------- */
+nav {
+    display: flex;
+    /* Met les éléments en ligne */
+    justify-content: space-between;
+    /* Espace entre le logo et la liste */
+    align-items: center;
+    /* Alignement vertical */
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+
+    a:hover {
+        color: #f57542;
+        /* Couleur au survol */
+    }
+
+    background-color: #213c5f ;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        /* Espace entre les liens */
+        list-style: none;
+        width: 33%;
+
+        a {
+            font-weight: 500;
+            color: #F2F2F2;
+        }
+    }
 }
 
 .logo {
     width: 5%;
 }
 
-nav {
-    display: flex; /* Met les éléments en ligne */
-    justify-content: space-between; /* Espace entre le logo et la liste */
-    align-items: center; /* Alignement vertical */
-    cursor: pointer;
-    position: fixed;
-    width: 100%;
-    a:hover {
-      color: #b0cef6; /* Couleur au survol */
-    }
-    background-color: #26446c ;
-    ul {
-        display: flex;
-        justify-content: space-around; /* Espace entre les liens */
-        list-style: none;
-        width: 33%;
-     a {
-          font-weight: 500;
-          color: #F2F2F2;
-        }
-      }
-  }
-  
-  #logo {
-    width: 5%;
+/* ---------main------------- */
+main{
+    padding-top: 110px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#photo {
+    width: 35%;
     object-fit: cover;
-  }
-
-#image {
-    width: 30%;
 }
 
 .sect1 {
     display: flex;
     text-align: center;
     margin-left: 13%;
-    padding: 50px;
+    padding: 30px;
 }
 
 .div1 {
     display: flex;
     width: AUTO;
     flex-direction: column;
-    gap: 20%;
     TEXT-ALIGN: JUSTIFY;
-    WIDTH: 463PX;
+    align-items: baseline;
+    WIDTH: 501PX;
     MARGIN: 56PX;
     color: #213c5f;
 }
@@ -78,11 +114,15 @@ nav {
     margin: 34px;
     justify-content: center;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .card {
     display: flex;
     border: 1px solid #46352A;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.098);
     border-radius: 8px;
     padding: 5px;
     GAP: 30PX;
@@ -90,16 +130,16 @@ nav {
     flex-direction: column;
     width: 25%;
     align-items: center;
-    background-color: #213c5f;
-    color: #F2F2F2;
+    background-color: #F2F2F2;
+    color: #213c5f;
 }
 
 .fig {
     display: flex;
     flex-direction: column;
-    border: 1px solid #A68477;
     padding: 10px;
     align-items: center;
+    text-align: center;
 }
 
 .div3 {
@@ -110,7 +150,7 @@ nav {
 
 i {
     font-size: 50px;
-    color: #b0cef6;
+    color: #26446c;
 }
 
 .div2 {
@@ -124,29 +164,48 @@ i {
     line-height: 3;
 }
 
+.parcours {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16;
+
+    .card {
+        width: 30%;
+        padding: 27px;
+        text-align: justify;
+    }
+}
+
+.sect4 {
+    margin: 34px;
+
+    h4 {
+        color: #213c5f;
+        text-align: center;
+    }
+   
+}
+
 .Projets {
     display: flex;
     justify-content: center;
 }
 
+.Projets .card {
+    padding: 20px;
+    color: #F2F2F2;
+    width: 19%;
+    *{
+        margin-bottom: 20px;
+    }
+}
+
 .image {
-    width: 203px;
+    width: 100%;
     height: 176px;
     border-radius: 1rem;
     object-fit: fill;
-}
-
-.sect3 {
-    margin: 34px;
-
-}
-.sect4 {
-    margin: 34px;
-
-    h4 {
-        color: #F2F2F2;
-        text-align: center;
-    }
 }
 
 .sect5 {
@@ -164,11 +223,6 @@ i {
     flex-direction: column;
 }
 
-.Projets .card {
-    padding: 34px;
-    color: #F2F2F2;
-}
-
 form {
     input[type="text"] {
         WIDTH: 294PX;
@@ -183,20 +237,41 @@ textarea {
 
 button {
     width: 100px;
-    background-color: #213c5f;
+    background-color: #F2F2F2;
+    color: #213c5f;
     border: 2px solid;
     BORDER-RADIUS: 5PX;
-    COLOR: #F2F2F2;
     margin: 2px;
     padding: 10px;
 }
-
 footer {
+    background-color: #213c5f;
     display: flex;
     gap: 45px;
     justify-content: center;
 }
-.cv{
-    background-color: #213c5f;
-    color: #F2F2F2;
+.cv {
+    background-color: #F2F2F2;
+    color: #213c5f;
+    margin: 2px;
+    padding: 10px;
+    BORDER-RADIUS: 5PX;
+}
+@media only screen and (max-width: 600px) {
+    .sect1{
+        flex-direction: column;
+    }
+.Projets{
+    flex-direction: column;
+}
+.card{
+    width: 100%;
+}
+.sectioncard{
+    width: 100%;
+}
+.parcours{
+    flex-direction: column;
+    width: 100%;
+}
 }
