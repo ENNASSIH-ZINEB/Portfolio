@@ -11,7 +11,8 @@ h1{
     font-family: "Playfair Display", serif;
     font-size: 90px;
     text-align: center;
-    color: #213c5f;
+    color: #F2F2F2;
+    ;
     padding: 20%;
     padding-top: 10%;
     font-weight: 200;
@@ -79,23 +80,35 @@ nav {
 
 /* ---------main------------- */
 main{
-    padding-top: 110px;
+    padding-top: 50px;
 }
 .hero {
+    background-image: url(devenir-developpeur-web-mobile.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.web{
+    width: 100%;
 }
 #photo {
     width: 35%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .sect1 {
     display: flex;
     text-align: center;
-    margin-left: 13%;
+    margin-left: 12%;
     padding: 30px;
+    PADDING-TOP: 10%;
 }
 
 .div1 {
@@ -213,7 +226,7 @@ i {
 }
 
 .sect6 {
-    width: 700PX;
+    width: 733PX;
     margin: auto;
     padding: 32px;
     box-shadow: 0 4px 15px #00000026;
@@ -263,6 +276,7 @@ footer {
     }
 .Projets{
     flex-direction: column;
+    width: 100%;
 }
 .card{
     width: 100%;
